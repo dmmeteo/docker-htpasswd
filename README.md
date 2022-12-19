@@ -1,3 +1,5 @@
+[![Docker build images](https://github.com/dmmeteo/docker-htpasswd/actions/workflows/docker.yml/badge.svg)](https://github.com/dmmeteo/docker-htpasswd/actions/workflows/docker.yml)
+
 # htpasswd
 
 ## Usage
@@ -15,5 +17,7 @@ This will use bcrypt encryption.
 To rebuild for all platforms:
 
 ```shell
-docker buildx build --platform=linux/amd64,linux/arm64,linux/arm/v7 -t dmmeteo/htpasswd:latest . --push
+docker buildx build \
+    --platform=linux/amd64,linux/arm64,linux/ppc64le,linux/s390x,linux/386,linux/arm/v7,linux/arm/v6 \
+    -t dmmeteo/htpasswd:latest . --push
 ```

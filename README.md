@@ -2,6 +2,8 @@
 
 # htpasswd
 
+See [htpasswd](https://hub.docker.com/r/dmmeteo/htpasswd) on docker hub.
+
 ## Usage
 
 To generate a password file:
